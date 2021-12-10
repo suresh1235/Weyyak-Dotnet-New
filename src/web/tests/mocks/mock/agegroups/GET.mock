@@ -1,0 +1,42 @@
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+
+{
+  "data": [
+    {
+      "id": 1,
+      "englishName": "G – General Audiences",
+      "arabicName": "لجميع الأعمار"
+    },
+    {
+      "id": 2,
+      "englishName": "PG – Parental Guidance Suggested",
+      "arabicName": "بإشراف الوالدين"
+    },
+    {
+      "id": 3,
+      "englishName": "PG 13 – Parents Strongly Cautioned",
+      "arabicName": "غير مناسبة للأطفال تحت سن الــ 13"
+    },
+    {
+      "id": 4,
+      "englishName": "PG 15 - Parents Strongly Cautioned",
+      "arabicName": "غير مناسبة للأطفال تحت سن الــ 15"
+    },
+    {
+      "id": 5,
+      "englishName": "15+",
+      "arabicName": "15+"
+    },
+    {
+      "id": 6,
+      "englishName": "18+",
+      "arabicName": "18+"
+    },
+    {
+      "id": 7,
+      "englishName": "NR - Not Rated by MPAA",
+      "arabicName": "لم يتم تقييمه من قبل الرقابة"
+    }
+  ]
+}

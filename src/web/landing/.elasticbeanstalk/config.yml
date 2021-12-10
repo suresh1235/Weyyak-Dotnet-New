@@ -1,0 +1,16 @@
+branch-defaults:
+  default:
+    environment: landing-qa
+deploy:
+    artifact: artifact_path
+environment-defaults:
+  landing-qa:
+    branch: null
+    repository: null
+global:
+  application_name: landing
+  default_ec2_keyname: stage
+  default_platform: 64bit Amazon Linux 2016.09 v3.3.1 running Node.js
+  default_region: ap-south-1
+  profile: eb-cli-z5
+  sc: null

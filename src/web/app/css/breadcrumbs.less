@@ -1,0 +1,31 @@
+@import 'variables.less';
+
+.bo-essel-bread-crumbs {
+  padding: 10px 0 10px 0;
+
+  & .bo-essel-bread-crumb {
+    cursor: pointer;
+
+    & > a {
+      font-family: 'Open Sans Regular', 'Open Sans';
+      font-feature-settings: 'kern' 1;
+      font-kerning: normal;
+      font-size: 20px;
+      font-style: normal;
+    }
+
+    &:last-of-type > a {
+      color: black;
+      cursor: auto;
+      text-decoration: none;
+      font-family: 'Open Sans Bold', 'Open Sans';
+      font-weight: bold;
+    }
+  }
+}
+
+.bo-essel-bread-crumb-delimiter {
+  color: @linkColor;
+  padding: 0 5px 0 5px;
+  font-size: 20px;
+}

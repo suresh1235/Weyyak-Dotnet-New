@@ -1,0 +1,14 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "englishName": "Action & Adventure",
+      "arabicName": "أكشن و مغامرة"
+    },
+    {
+      "id": 2,
+      "englishName": "Classics",
+      "arabicName": "كلاسيكي"
+    }
+  ]
+}

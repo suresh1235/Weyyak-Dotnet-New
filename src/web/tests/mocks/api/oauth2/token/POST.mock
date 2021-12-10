@@ -1,0 +1,9 @@
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+
+{
+  "access_token": "QKfNVVhgBcfgLxU4Qw7iKmQG-5tyF81rLU5I1k0Vmu77ZAEDwihsuFF-QbGA3BN82qGXHr7zRrc1Rrs_0DVBpqNx7HJWca70Jvcn7QmNkNz52MnC-N79ZDnxf6lYOi5JQFf1wL0Km0Y84AG3CPgwY19Qe0xFvKeypViED0fre2egFpqNwYGydHsZay7u1URyL-5Iz5Aw-m5uDj-dJVM8fBM-VkBgN_ivWhlKtwWB6KLOk_AwB4daGlbqwG_E6oYWfvrTcOBMn7eABjlJgfR9HKNyTK5o4DpQ2VDNWkHOzcUAVIKRC05kyOIeuEKOkyLmOnXvR7YLd6iGdz4lIuq4UcA-lZtLzMHh87zhhBWKJ-5ViPSesk0PtvAWK18F-ng25euWt8uhS6IWb9jRHA9MtqhyvHfQI5ntqeyftVG64YiicVH10WihJ0a9yppZPWOHzO0xiuxQ4nEq4g-YwErHBxOzCiUFuDVrv5iGkrv4TNik28fHlUhKN8SC_9rnbDwKlkFO4KLZsnFbdk6n7R5G2Q",
+  "token_type": "bearer",
+  "expires_in": 59,
+  "refresh_token": "07687eeca4a744ab8b82d63a38ba78c2"
+}

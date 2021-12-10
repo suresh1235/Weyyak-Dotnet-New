@@ -1,0 +1,403 @@
+/*
+ * Start Bootstrap - Full Width Pics (http://startbootstrap.com/)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+
+body {
+    background-color: transparent;
+    color: #fff;
+    min-width: 375px;
+}
+html {
+    height: 100%;
+}
+.ar,.en {
+    font-weight: normal;
+    font-style: normal;
+}
+.ar {
+    font-family: 'DroidArabicKufiRegular';
+}
+_::-webkit-:host:not(:root:root), .ar input[type="email"], button {
+    font-size: 11px;
+}
+.en {
+    font-family: 'Droid Sans', sans-serif;
+}
+.full {
+    background: #000 url('../img/bg-750.png') no-repeat top center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+header h1 {
+    margin-bottom: 0;
+}
+.nav {
+    padding: 0;
+    font-size: 12px;
+}
+.nav > li > a {
+    color: #fff;
+    padding-bottom: 0;
+    text-align: right;
+    text-transform: uppercase;
+    text-decoration: underline;
+    float: right;
+}
+.nav > li > a:hover,
+.nav > li > a:focus {
+    background: transparent;
+}
+.img-center {
+    margin: 0 auto;
+}
+header h1 img {
+    width: 260px;
+}
+.main-section {
+    background: url('../img/content-bg-750.png') no-repeat top center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    /*bottom: -17px;*/
+    position: relative;
+    z-index: 2;
+    height: 0;
+    padding-top: 100%;
+}
+.main-section-wrapper {
+    position: relative;
+}
+.main-section-footer {
+    position: absolute;
+    background-color: #ff740f;
+    z-index: 0;
+    bottom:0;
+    width: 100%;
+    min-height: 5px;
+}
+.main-section-footer > h2 {
+    visibility: hidden;
+}
+.main-section-footer2 {
+    position: absolute;
+    z-index: 0;
+    bottom:0;
+    width: 100%;
+    min-height: 5px;
+    z-index: 3;
+}
+.data-section {
+    background: #ff740f;
+    /*border-top: 3px solid #ff9614;*/
+    top: -10%;
+    position: relative;
+    z-index: 3;
+    padding: 0 0 15px 0;
+}
+.section-heading {
+    margin: 0;
+    font-size: 1.3em;
+}
+.section-lead {
+    line-height: 1.6;
+    margin: 0;
+    position: absolute;
+    top:0;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    padding: 280px 0 45px;
+    min-width: 350px;
+}
+.section-paragraph {
+    margin: 30px 0;
+}
+.section-lead > span {
+    display: block;
+}
+.section-lead > span span {
+    background: #000;
+    font-size: 1.1em;
+    padding: 0px 10px;
+}
+.en .section-lead > span span {
+    padding: 4px 10px;
+}
+body.en .section-lead > span span > strong {
+    text-transform: uppercase;
+}
+.lp-input {
+    border: 0 none;
+    border-radius: 0;
+    color: #a6a6a6;
+    margin-left: -5px;
+    padding: 6px 10px;
+    width: 235px;
+}
+.en .lp-input {
+    margin-right: -5px;
+}
+footer {
+    background-color: #000;
+    display: flex;
+    width: 100%;
+    bottom: 0;
+    min-height: 60px;
+    height: 10%;
+    z-index: 4;
+}
+footer .list-inline > li {
+    padding: 0;
+}
+footer h3 {
+    font-size: 14px;
+    margin: 5px;
+}
+
+/* Icons */
+.icon {
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+.icon.social-ico {
+    background-image: url("../img/social-sprite.png");
+    height: 29px;
+    width: 29px;
+}
+.icon.social-ico.istagram {
+    background-position: 0 0;
+}
+.icon.social-ico.twitter {
+    background-position: -36px 0;
+}
+.icon.social-ico.facebook {
+    background-position: -73px 0;
+}
+.icon.social-ico.snapchat {
+    background-position: -112px 0;
+}
+
+/* Buttons */
+.btn-lp-submit {
+    background-color: #000;
+    border: 0 none;
+    border-radius: 0;
+    padding-left: 30px;
+    padding-right: 30px;
+    vertical-align: baseline;
+}
+.btn-lp-submit:hover,
+.btn-lp-submit:focus {
+    color: #fff;
+}
+
+/* ----------- iPhone 6 ----------- */
+/* Portrait */
+@media only screen
+and (min-device-width: 375px)
+and (max-device-width: 667px)
+and (orientation: portrait)
+and (-webkit-min-device-pixel-ratio: 2)
+{
+    .section-lead {
+        padding: 240px 0 45px;
+    }
+    .section-heading {
+        font-size: 16px;
+        font-weight: bold;
+    }
+    .data-section form {
+        height: 32px;
+    }
+    .data-section input[type="email"], button {
+        height: 100%;
+    }
+}
+
+/* ----------- iPhone 6+ ----------- */
+/* Portrait */
+@media only screen
+and (min-device-width: 414px)
+and (max-device-width: 736px)
+and (-webkit-min-device-pixel-ratio: 3)
+and (orientation: portrait) {
+    .main-section {
+        background-image: url('../img/content-bg-750.png');
+        padding-top: 100%;
+    }
+    .section-lead {
+        padding: 260px 0 45px;
+    }
+    .section-lead > span span {
+        padding: 0px 10px;
+    }
+    .data-section {
+        padding: 0 0 15px 0;
+    }
+    .data-section form {
+        height: 32px;
+    }
+    .data-section input[type="email"], button {
+        height: 100%;
+    }
+    .main-section-footer,
+    .main-section-footer2 {
+        min-height: 5px;
+    }
+    .section-heading {
+        font-size: 1.2em;
+    }
+}
+
+/* ----------- Galaxy S6 ----------- */
+/* Portrait */
+@media screen
+and (device-width: 360px)
+and (device-height: 640px)
+and (-webkit-min-device-pixel-ratio : 4)
+and (-webkit-device-pixel-ratio : 4)
+and (orientation: portrait) {
+    .main-section {
+        background-image: url('../img/content-bg-750.png');
+        padding-top: 100%;
+    }
+    .section-lead {
+        padding: 240px 0 45px;
+    }
+    .section-lead > span span {
+        padding: 0px 10px;
+    }
+    .data-section {
+        padding: 0 0 15px 0;
+    }
+    footer {
+        min-height: 80px;
+    }
+    .main-section-footer,
+    .main-section-footer {
+        min-height: 5px;
+    }
+    .section-heading {
+        font-size: 1.2em;
+    }
+}
+@media (min-width: 640px) {
+    .section-lead {
+        padding: 380px 0 45px;
+    }
+}
+@media (min-width: 768px) {
+    .full {
+        background-image: url('../img/bg-1920.png');
+    }
+    header h1 img {
+        width: 336px;
+    }
+    .main-section {
+        background-image: url('../img/content-bg-1920.png');
+        -webkit-background-size: contain;
+        -moz-background-size: contain;
+        background-size: contain;
+        -o-background-size: contain;
+        padding-top: 40%;
+        top: -10%;
+    }
+    .main-section-footer,
+    .main-section-footer2 {
+        min-height: 13.5%;
+    }
+    .data-section {
+        padding: 0 0 15px 0;
+        transform: translateY(-15%);
+        -webkit-transform: translateY(-15%);
+    }
+    .section-lead {
+        padding: 180px 0 33px;
+        font-size: 14px;
+    }
+    .btn-lp-submit {
+        padding: 8px 24px 10px;
+    }
+    .lp-input {
+        padding: 8px 10px 10px;
+        width: 315px;
+    }
+    .section-heading {
+        font-size: 1.3em;
+        padding: 20px 0 10px 0;
+    }
+}
+
+@media (min-width: 1200px) {
+    .main-section {
+        padding-top: 40%;
+        top: -10%;
+    }
+    .main-section-wrapper {
+        top: -10%;
+    }
+    .data-section {
+        padding: 0 0 15px 0;
+        transform: translateY(-45%);
+        -webkit-transform: translateY(-45%);
+    }
+    .section-lead {
+        padding: 280px 0 33px;
+        font-size: 22px;
+    }
+    .section-heading {
+        padding: 20px 0 10px 0;
+    }
+    .section-lead > span span {
+        font-size: 1em;
+    }
+    .en .section-lead > span span {
+        padding: 9px 20px;
+    }
+    .lp-input {
+        padding: 8px 10px 10px;
+        width: 370px;
+    }
+    .en .lp-input {
+        margin-right: -4px;
+    }
+}
+
+@media (min-width: 1200px) and (min-height: 650px) and (max-height: 700px) {
+    .main-section {
+        padding-top: 38%;
+    }
+    footer {
+        height: 1%;
+    }
+}
+
+/* Large screens ----------- */
+@media (min-width : 1824px) {
+    .data-section {
+        padding: 0 0 15px 0;
+        transform: translateY(-65%);
+        -webkit-transform: translateY(-65%);
+    }
+    .section-lead {
+        padding: 520px 0 165px;
+        font-size: 22px;
+    }
+    .section-heading {
+        padding: 30px 0 10px 0;
+    }
+    footer {
+        height: 7%;
+    }
+}
+
+@media (min-height: 100px) and (max-height: 300px) {
+    footer {
+        display: none;
+    }
+}

@@ -1,0 +1,4 @@
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+
+{"contentTypes":["Cartoon","Content Type 1","Content Type 2","Documentary","Movie","TV Mini-Show","TV Show"]}

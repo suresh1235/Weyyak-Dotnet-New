@@ -1,0 +1,309 @@
+@import 'variables.less';
+
+@appBGColor: #eaeaea;
+@appMargin: 5px;
+
+.bo-essel-app-container {
+
+  & .row {
+    & .col {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
+  & button:not(.publish-button) {
+    color: white;
+    background-color: grey;
+    &:hover {
+      background-color: darkgray;
+    }
+    &.btn.active.focus, &.btn.active:focus, &.btn.focus, &.btn:active.focus, &.btn:active:focus, &.btn:focus {
+      outline: none;
+    }
+  }
+
+  & button[type="submit"]:not(.publish-button) {
+    background-color: @mainColor;
+    &:hover {
+      background-color: @mainColorOnHover;
+    }
+  }
+
+  & a {
+    color: @linkColor;
+    &:hover {
+      color: @linkColorOnHover;
+    }
+
+    & :not(.fa) {
+      font-family: 'Open Sans Regular', 'Open Sans';
+      font-size: 14px;
+      font-weight: normal;
+    }
+
+    &.fa {
+      color: inherit;
+      text-decoration: none;
+      line-height: inherit;
+      display: inline-block;
+      vertical-align: middle;
+      &:hover {
+        color: @mainColorOnHover;
+      }
+    }
+  }
+
+  & .bo-essel-component-container {
+    /* View port height - (Header height + Body margin top height + Body margin bottom height) */
+    min-height: ~'calc(100vh - (@{pageHeaderHeight} + @{appMargin} + @{appMargin}))';
+    margin: 5px;
+    overflow: auto;
+    background-color: #eaeaea;
+    border-radius: 15px;
+    border: solid 1px #eaeaea;
+    padding: 15px;
+
+    label {
+      font-family: 'Open Sans';
+      font-feature-settings: 'kern' 1;
+      font-kerning: normal;
+      font-style: normal;
+      font-weight: bold;
+      color: @textColor;
+    }
+
+    .bread-crumbs {
+        padding: 0 15px;
+    }
+
+    .main-content {
+        background-color: #eaeaea;
+        border-radius: 15px;
+        border: solid 1px #eaeaea;
+        padding: 15px;
+    }
+  }
+
+  .bo-essel-side-menu + .bo-essel-component-container {
+    background-color: transparent;
+    border-radius: 15px;
+    border: none;
+    padding: 0;
+  }
+
+  & .logout {
+    position: fixed;
+    z-index: 11;
+    right: 20px;
+    top: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    &:hover {
+      color: white;
+    }
+  }
+}
+
+.bo-essel-modal {
+
+  & button {
+
+    &.btn.active.focus, &.btn.active:focus, &.btn.focus, &.btn:active.focus, &.btn:active:focus, &.btn:focus {
+      outline: none;
+    }
+
+    &:not(.close) {
+      background-color: lightgray;
+
+      &:hover {
+        background-color: darkgray;
+      }
+    }
+
+    &.close {
+      color: white;
+      opacity: 1.0;
+
+      &:hover {
+        color: white;
+      }
+    }
+  }
+
+  & button[type="submit"] {
+    background-color: @mainColor;
+    color: white;
+    padding: 0;
+
+    &.default {
+      padding: 6px 12px;
+    }
+
+    &:hover {
+      background-color: @mainColorOnHover;
+    }
+
+    & > label {
+      margin: 0;
+      padding: 6px 12px;
+    }
+  }
+
+  & .modal-header {
+    background-color: @mainColor;
+
+    & h4 {
+      font-family: 'Open Sans Regular', 'Open Sans';
+      font-weight: 400;
+      font-style: normal;
+      font-size: 18px;
+      color: white;
+    }
+  }
+
+  & .modal-footer {
+    & button {
+      font-family: 'Open Sans Regular', 'Open Sans';
+      font-weight: 400;
+      font-style: normal;
+
+      & > label {
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.bo-essel-form {
+
+  position: relative;
+
+  &.default {
+
+    & label {
+      line-height: 34px;
+    }
+
+    & label, input:not([type="button"]), select {
+      font-family: 'Open Sans Italic', 'Open Sans';
+      font-size: 14px;
+      font-style: italic;
+      font-weight: normal;
+    }
+
+    & .first-column {
+
+      padding-right: 0;
+
+      & > label {
+        float: right;
+        line-height: 34px;
+        font-family: 'Open Sans Regular', 'Open Sans';
+        font-size: 14px;
+        font-style: normal;
+        font-weight: normal;
+      }
+    }
+  }
+}
+
+& .bo-essel-flex {
+  display: flex;
+}
+
+& .bo-essel-inline {
+  display: inline;
+}
+
+.search-group {
+
+    button {
+        height: 34px;
+        margin-left: 10px;
+
+        &:hover {
+            color: @bootstrapLightBlack !important;
+            background-color: @bootstrapGray !important;
+        }
+    }
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+
+        &::after {
+            position: absolute;
+            content: " \25bc";
+            top: 1px;
+            right: 20px;
+            height: 20px;
+            width: 20px;
+            font-size: 8px;
+            width: 0;
+            height: 0;
+            pointer-events: none;
+        }
+    }
+
+    @media screen and (min-width: 992px) {
+
+        display: flex;
+
+        label {
+            flex: 0 0 190px;
+            line-height: 34px;
+        }
+
+        .dropdown {
+            flex: 0 0 340px;
+
+            select {
+                -webkit-appearance: none;
+                -webkit-border-radius: 0px;
+            }
+        }
+
+        input {
+            flex: 0 0 340px;
+        }
+
+        .input-group-left {
+            border-radius: 5px 0 0 5px !important;
+        }
+
+        .input-group-right {
+            border-radius: 0 5px 5px 0 !important;
+        }
+    }
+
+    @media screen and (max-width: 992px) {
+
+        button {
+            display: block;
+            margin: 5px auto;
+        }
+
+        .dropdown {
+            display: block;
+
+            select {
+                -webkit-appearance: none;
+            }
+
+            &::after {
+                top: 12px;
+            }
+        }
+
+        label,
+        .dropdown,
+        input {
+            margin: 5px 0;
+        }
+    }
+}
+
+.hide-option{
+  display: none;
+}

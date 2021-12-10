@@ -1,0 +1,24 @@
+{
+  "data": [
+    {
+      "id": 321,
+      "englishName": "Action & Adventure",
+      "arabicName": "أكشن و مغامرة"
+    },
+    {
+      "id": 2321,
+      "englishName": "Classiasd acs",
+      "arabicName": "كلاسيكي"
+    },
+    {
+      "id": 12,
+      "englishName": "Classd as dics",
+      "arabicName": "كلاسيكي"
+    },
+    {
+      "id": 33,
+      "englishName": "Clasa sda ssics",
+      "arabicName": "كلاسيكي"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+@import 'variables.less';
+
+.bo-essel-collapsible-panel {
+  margin-top: 20px;
+
+  & .bo-essel-action {
+    font-size: 16px;
+
+    &.trigger {
+      font-weight: bold;
+      color: @mainColor;
+       &:hover {
+        color: @mainColorOnHover;
+      }
+    }
+
+    &.delete {
+      margin-left: 5px;
+      font-size: 14px;
+      color: @mainColor;
+      &:hover {
+        color: @mainColorOnHover;
+      }
+    }
+
+  }
+
+  & .block {
+    font-size: 16px;
+    margin-top: 20px;
+    font-weight: bold;
+  }
+
+  & .panel {
+    border: none;
+    background-color: unset;
+    -webkit-box-shadow: unset;
+    box-shadow: unset;
+  }
+}

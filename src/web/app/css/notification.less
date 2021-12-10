@@ -1,0 +1,126 @@
+@import 'variables.less';
+
+.bo-essel-notification-transition-enter {
+  opacity: 0;
+
+  &.bo-essel-notification-transition-active {
+    opacity: 1;
+    transition: opacity 1s ease-in;
+    -webkit-transition: opacity 1s ease-in;
+  }
+}
+
+.bo-essel-notification-transition-leave {
+  opacity: 1;
+
+  &.bo-essel-notification-transition-leave-active {
+    opacity: 0;
+    transition: opacity 1s ease-in;
+    -webkit-transition: opacity 1s ease-in;
+  }
+}
+
+.bo-essel-notification {
+
+  &.raw {
+
+    &.warning .bo-essel-server-details {
+      color: #ff9900;
+    }
+
+    &.info .bo-essel-server-details {
+      color: #33cc66;
+    }
+
+    &.error .bo-essel-server-details {
+      color: #ff0000;
+    }
+  }
+
+  &.base {
+    position: fixed;
+    display: inline-flex;
+    top: @pageHeaderHeight;
+    height: 45px;
+    z-index: @modalDialogZIndex + 1;
+    left: 50%;
+    transform: translateX(-50%);
+
+    & span {
+      font-family: 'Open Sans Light', 'Open Sans';
+      font-weight: 300;
+      font-style: italic;
+      font-size: 14px;
+      color: @textColor;
+      align-self: center;
+
+      &.bo-essel-notification-close {
+        font-style: normal;
+        align-self: auto;
+        cursor: pointer;
+        margin-right: 5px;
+        height: 15px;
+      }
+    }
+  }
+
+  &.base, &.summary {    
+
+    &.warning {
+      background-color: rgba(255, 230, 230, 1);
+
+      & .bo-essel-notification-marker {
+        background-color: #ff9900;
+      }
+
+      & .bo-essel-notification-icon {
+        color: #ff9900;
+      }
+    }
+
+    &.info {
+      background-color: rgba(233, 249, 238, 1);
+
+      & .bo-essel-notification-marker {
+        background-color: #33cc66;
+      }
+
+      & .bo-essel-notification-icon {
+        color: #33cc66;
+      }
+    }
+
+    &.error {
+      background-color: rgba(255, 230, 230, 1);
+
+      & .bo-essel-notification-marker {
+        background-color: #ff0000;
+      }
+
+      & .bo-essel-notification-icon {
+        color: #ff0000;
+      }
+    }
+
+    .bo-essel-notification-marker {
+      position: absolute;
+      height: 100%;
+      width: 5px;
+    }
+
+    .bo-essel-notification-icon {
+      display: inline-block;
+      margin-right: 5px;
+      padding-left: 7px;
+      align-self: center;
+    }
+
+    .bo-essel-notification-details-link {
+      background-color: unset;
+      color: @textColor;
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+}

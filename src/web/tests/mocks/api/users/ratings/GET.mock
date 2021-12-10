@@ -1,0 +1,60 @@
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+
+{
+  "pagination": {
+    "size": 4,
+    "offset": 0,
+    "limit": 10
+  },
+  "data": [
+    {
+      "ratedAt": "2017-01-06T13:27:44.533Z",
+      "title": "Super film 1",
+      "contentType": "Content Type 2",
+      "genres": [
+        "genre1",
+        "genre2"
+      ],
+      "ratedOnPlatformName": "iOS",
+      "rating": 3,
+      "isHidden": false
+    },
+    {
+      "ratedAt": "2017-02-06T13:27:44.533Z",
+      "title": "Super film 1",
+      "contentType": "Content Type 1",
+      "genres": [
+        "genre1",
+        "genre2"
+      ],
+      "ratedOnPlatformName": "iOS",
+      "rating": 5,
+      "isHidden": false
+    },
+    {
+      "ratedAt": "2017-02-03T13:27:44.533Z",
+      "title": "Hello world series",
+      "contentType": "Content Type 2",
+      "genres": [
+        "action",
+        "drama"
+      ],
+      "ratedOnPlatformName": "iOS",
+      "rating": 2,
+      "isHidden": false
+    },
+    {
+      "ratedAt": "2017-02-03T13:27:44.533Z",
+      "title": "Hello world series ep2",
+      "contentType": "Content Type 2",
+      "genres": [
+        "action",
+        "drama"
+      ],
+      "ratedOnPlatformName": "iOS",
+      "rating": 4,
+      "isHidden": false
+    }
+  ]
+}

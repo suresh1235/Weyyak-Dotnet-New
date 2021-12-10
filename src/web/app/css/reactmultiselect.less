@@ -1,0 +1,34 @@
+@import '../../node_modules/react-select/dist/react-select.css';
+
+// react multiple select overrides
+.Select--multi {
+
+    .Select-value {
+        background-color: @mainColorOpacityHigh;
+        border: 1px solid @mainColorOpacityLow;
+        color: @mainColorOnHover;
+    }
+
+    .Select-value-icon {
+        border-right: 2px solid @mainColorOpacityLow;
+        padding: 0 4px;
+
+        &:hover,
+        &:focus {
+            background-color: @mainColorOpacityMid;
+            color: @mainColorOnHover;
+        }
+    }
+
+    .Select-value-label {
+        display: inline;
+    }
+}
+
+.Select--single {
+
+    .Select-arrow-zone,
+    .Select-clear-zone {
+        background-color: @bootstrapWhite;
+    }
+}

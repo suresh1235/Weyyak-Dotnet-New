@@ -1,0 +1,16 @@
+branch-defaults:
+  default:
+    environment: prodFront
+deploy:
+  artifact: artifact_path
+environment-defaults:
+  prodFront:
+    branch: null
+    repository: null
+global:
+  application_name: Front
+  default_ec2_keyname: prod
+  default_platform: 64bit Amazon Linux 2016.09 v2.5.0 running Docker 1.12.6
+  default_region: ap-south-1
+  profile: eb-cli-z5
+  sc: null

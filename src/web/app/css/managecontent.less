@@ -1,0 +1,85 @@
+@import 'variables.less';
+
+.table > tbody {
+
+    & > tr {
+
+        & > td {
+
+            vertical-align: middle;
+
+            &:first-child {
+
+                i {
+                    margin-right: 10px;
+                }
+
+                span.content-title {
+                    padding: 5px 0;
+                }
+            }
+
+            i {
+                vertical-align: middle;
+            }
+
+            .fa-remove {
+                background: @textColor;
+                width: 18px;
+                height: 18px;
+                text-align: center;
+                border-radius: 9px;
+                font-size: 16px;
+                color: @bootstrapWhite;
+                margin-top: -2px;
+            }
+
+            .rights-type-select {
+                min-width: 75px
+            }
+
+            span:hover .fa-remove {
+                background-color: @mainColorOnHover;
+            }
+        }
+    }
+
+    & > tr {
+
+        .form-control {
+            padding: 6px 12px 6px 1px !important;
+        }
+
+        td:nth-child(2) {
+
+            .form-control {
+                min-width: 120px;
+            }
+        }
+
+        &.row-data-1 {
+
+            td {
+
+                &:first-child {
+                    padding-left: 60px;
+                }
+            }
+        }
+
+        &.row-data-2 {
+            td {
+                &:first-child {
+                    padding-left: 120px;
+                }
+            }
+        }
+
+        td {
+
+            &:last-child > div {
+                float: right;
+            }
+        }
+    }
+}

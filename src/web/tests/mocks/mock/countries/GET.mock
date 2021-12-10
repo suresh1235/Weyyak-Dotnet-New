@@ -1,0 +1,27 @@
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+
+{
+  "data": [
+    {
+      "id": 356,
+      "englishName": "India",
+      "arabicName": "AR-india"
+    },
+    {
+      "id": 682,
+      "englishName": "Saudi Arabia",
+      "arabicName": "AR-Saudi Arabia"
+    },
+    {
+      "id": 826,
+      "englishName": "United Kingdom",
+      "arabicName": "AR-United Kingdom"
+    },
+    {
+      "id": 840,
+      "englishName": "United States",
+      "arabicName": "AR-United States"
+    }
+  ]
+}

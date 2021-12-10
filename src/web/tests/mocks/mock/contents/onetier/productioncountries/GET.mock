@@ -1,0 +1,17 @@
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+
+{
+  "data": [
+    {
+      "productionCountry": 1,
+      "englishName": "Country1",
+      "arabicName": "فيلم"
+    },
+    {
+      "productionCountry": 2,
+      "englishName": "Country2",
+      "arabicName": "مسرحية"
+    }
+  ]
+}

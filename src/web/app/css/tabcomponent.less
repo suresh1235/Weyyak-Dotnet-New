@@ -1,0 +1,31 @@
+@import 'variables.less';
+
+.bo-essel-tab-component {
+  margin: 10px 0 10px 0;
+
+  .forms {
+    width: 100%;
+  }
+
+  & li[role="presentation"] {
+
+    & a {
+      background-color: lightgray;
+      color: black;
+      outline: unset;
+
+      &:hover {
+        color: @mainColorOnHover;
+      }
+    }
+
+    &.active a {
+      background-color: darkgray;
+      color: black;
+
+      &:hover {
+        color: black;
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+
+{
+  "data": [
+    {
+      "id": 1,
+      "name": "Tag1"
+    },
+    {
+      "id": 2,
+      "name": "Tag2"
+    },
+    {
+      "id": 3,
+      "name": "Tag3"
+    },
+    {
+      "id": 4,
+      "name": "Tag4"
+    }
+  ]
+}

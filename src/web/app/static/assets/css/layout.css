@@ -1,0 +1,43 @@
+.bo-essel-header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 65px;
+    overflow: hidden;
+    background-color: #ff6d02;
+    z-index: 10;
+}
+
+.bo-essel-header .logo {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.bo-essel-header img {
+    position: absolute;
+    margin: auto;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.bo-essel-body {
+    position: relative;
+    top: 65px;
+}
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+    -webkit-appearance: searchfield-cancel-button;
+}

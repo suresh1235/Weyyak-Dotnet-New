@@ -1,0 +1,36 @@
+@import 'variables.less';
+
+.bo-essel-component-container {
+  & .bo-essel-editor-create-btn {
+    background-color:@mainColor;
+    margin: 0 15px 15px 15px;
+
+    & .fa.fa-user-plus {
+      margin-right: 3px;
+    }
+
+    &:hover {
+      background-color: @mainColorOnHover;
+      color: white;
+    }
+
+    &:focus {
+      color: white;
+    }
+  }
+
+  .fa-pencil-square-o {
+     font-size: 21px;
+     padding-top: 5px;
+  }
+}
+
+button {
+  &.bo-essel-edit-editor-password {
+    margin-bottom: 5px;
+    background-color: #e7e7e7;
+    &:hover {
+      background-color: #ebebeb;
+    }
+  }
+}

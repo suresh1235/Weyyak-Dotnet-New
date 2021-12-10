@@ -1,0 +1,4 @@
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+
+{"data":[{"id":356,"name":"India"},{"id":682,"name":"Saudi Arabia"},{"id":826,"name":"United Kingdom"},{"id":840,"name":"United States"}]}

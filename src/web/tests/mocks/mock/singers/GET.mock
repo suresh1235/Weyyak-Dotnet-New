@@ -1,0 +1,27 @@
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+
+{
+  "data": [
+    {
+      "id": 1,
+      "englishName": "Actor First",
+      "arabicName": "لجميع الأعمار"
+    },
+    {
+      "id": 2,
+      "englishName": "Actor Second",
+      "arabicName": "بإشراف الوالدين"
+    },
+    {
+      "id": 3,
+      "englishName": "Actor Third",
+      "arabicName": "غير مناسبة للأطفال تحت سن الــ"
+    },
+    {
+      "id": 4,
+      "englishName": "Actor Fourth",
+      "arabicName": "غير مناسبة للأطفال تحت سن الــ"
+    }
+  ]
+}

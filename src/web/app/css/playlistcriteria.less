@@ -1,0 +1,187 @@
+@import 'variables.less';
+
+.playlist-criteria {
+
+    table {
+
+        &.bo-essel-page-table {
+            margin-top: 10px;
+        }
+
+        .bo-essel-actions {
+
+            .item-name {
+                line-height: 26px;
+            }
+
+            .add-item {
+                float: right;
+
+                & > i {
+                    margin: 0 auto;
+                    background-color: @mainColor;
+                    color: @bootstrapWhite;
+                    padding: 2px;
+                    border-radius: 3px;
+                    width: 16px;
+                    padding-left: 3px;
+                    border: 1px solid @bootstrapLightGray;
+                    font-size: 10px;
+                }
+            }
+        }
+
+        tbody > tr td:last-child > div {
+            width: 100%;
+            padding-left: 20px;
+
+            .show-hide-child-elements-item {
+                position: absolute;
+                left: 25px;
+            }
+        }
+
+        .bo-essel-actions {
+            display: block;
+        }
+    }
+
+    .bo-essel-pagination {
+        float: right;
+    }
+
+    .bo-essel-inner-table-wrapper,
+    .playlist-grid {
+
+        .item-name {
+            float: left;
+            padding-right: 10px;
+        }
+
+        .bo-essel-pagination {
+            float: none;
+
+            .pagination {
+                margin: auto 0 10px auto;
+            }
+        }
+    }
+
+    .playlist-grid {
+
+        .bo-essel-pagination {
+            padding-bottom: 20px;
+        }
+    }
+
+    .playlist {
+        margin-top: 10px;
+
+        .playlist-content {
+            display: block;
+            border: 1px solid @bootstrapGray;
+            border-bottom: none;
+
+            &:last-child {
+                border-bottom: 1px solid @bootstrapGray;
+            }
+        }
+
+        .playlist-item {
+            background-color: @bootstrapWhite;
+            min-height: 43px;
+            display: flex;
+            position: relative;
+
+            .item-label {
+                flex: 1 auto;
+                word-break: break-word;
+                padding: 11px;
+                color: @textColor;
+            }
+
+            .move-upper-item,
+            .move-lower-item {
+                line-height: 42px;
+                padding: 0 8px;
+                border-right: 1px solid @bootstrapGray;
+
+                i {
+                    cursor: pointer;
+                    font-size: 12px;
+                    color: @bootstrapDarkGray;
+
+                    &:hover {
+                        color: @mainColorOnHover
+                    }
+                }
+            }
+
+            .show-hide-child-elements-item {
+                padding: 10px 10px 10px 0;
+
+                i {
+                    cursor: pointer;
+
+                    &:hover {
+                        color: @mainColorOnHover
+                    }
+                }
+            }
+
+            .left-gap {
+                padding-left: 18px;
+            }
+
+            .remove-item {
+                float: right;
+
+                i {
+                    cursor: pointer;
+                    margin: 0 auto;
+                    background-color: @mainColor;
+                    color: @bootstrapWhite;
+                    padding: 2px;
+                    border-radius: 3px;
+                    width: 16px;
+                    padding-left: 3px;
+                    border: 1px solid @bootstrapLightGray;
+                    font-size: 10px;
+                }
+            }
+
+            .playlist-grid {
+                background-color: #eaeaea;
+                padding: 0 3px;
+
+                & > div {
+                    margin-top: 25px;
+                    position: relative;
+
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        border-bottom: 1px solid @bootstrapGray;
+                        top: -13px;
+                        left: -14px;
+                        width: ~"calc(100% + 28px)";
+                    }
+                }
+
+                table {
+                    background-color: transparent;
+                    border: none;
+
+                    td {
+                        border: none;
+                        border-bottom: 1px solid @bootstrapWhite;
+
+                        .bo-essel-actions {
+                            padding: 5px 0 5px 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

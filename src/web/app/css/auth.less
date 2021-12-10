@@ -1,0 +1,59 @@
+@import 'variables.less';
+
+.bo-essel-login, .bo-essel-reset-password, .not-found-page {
+
+  width: 500px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  & .bo-essel-login-header, .bo-essel-reset-password-header {
+
+    h1, h5, a {
+      margin: 0;
+      font-feature-settings: 'kern' 1;
+      font-kerning: normal;
+      font-style: normal;
+    }
+
+    h1 {
+      font-family: 'Open Sans Bold', 'Open Sans';
+      font-weight: bold;
+      font-size: 49px;
+    }
+
+    h5 {
+      font-family: "Open Sans Regular", 'Open Sans';
+      font-weight: normal;
+      font-size: 24px;
+    }
+  }
+
+  & a {
+    font-family: 'Open Sans Italic', 'Open Sans';
+    font-size: 14px;
+    font-weight: normal;
+    font-style: italic;
+    color: @linkColor;
+    &:hover {
+      color: @linkColorOnHover;
+    }
+  }
+}
+
+.bo-essel-login+.bo-essel-notification.raw {
+  width: 500px;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -80%);
+}
+
+.bo-essel-reset-password-container+.bo-essel-notification.raw {
+  width: 500px;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -70%);
+}

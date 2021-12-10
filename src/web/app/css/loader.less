@@ -1,0 +1,84 @@
+@import 'variables.less';
+
+@-webkit-keyframes bo-essel-loader-bounce-delay {
+  0%, 80%, 100% { -webkit-transform: scale(0.0) }
+  40% { -webkit-transform: scale(1.0) }
+}
+
+@keyframes bo-essel-loader-bounce-delay {
+  0%, 80%, 100% {
+    transform: scale(0.0);
+    -webkit-transform: scale(0.0);
+  } 40% {
+      transform: scale(1.0);
+      -webkit-transform: scale(1.0);
+    }
+}
+
+.freeze-spinner {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: black;
+    opacity: .5;
+
+    .select-loader {
+        position: relative;
+        left: 50%;
+
+        & > div {
+            margin-top: 40%;
+            position: fixed;
+        }
+    }
+}
+
+.bo-essel-component-container,
+.bo-essel.modal-open {
+
+  & .bo-essel-loader-bounce {
+
+    &.bo-essel-loader-small {
+
+      &.select-loader {
+          flex: 1;
+          text-align: center;
+          display: block;
+      }
+
+      & > span {
+        width: 10px;
+        height: 10px;
+      }
+    }
+
+    & > span {
+      width: 18px;
+      height: 18px;
+      background-color: @mainColor;
+
+      border-radius: 100%;
+      display: inline-block;
+      -webkit-animation: bo-essel-loader-bounce-delay 1.4s infinite ease-in-out;
+      animation: bo-essel-loader-bounce-delay 1.4s infinite ease-in-out;
+      /* Prevent first frame from flickering when animation starts */
+      -webkit-animation-fill-mode: both;
+      animation-fill-mode: both;
+    }
+
+    & .bo-essel-loader-bounce-first {
+      -webkit-animation-delay: -0.32s;
+      animation-delay: -0.32s;
+    }
+
+    & .bo-essel-loader-bounce-second {
+      -webkit-animation-delay: -0.16s;
+      animation-delay: -0.16s;
+    }
+  }
+
+  & .bo-essel-loader-center {
+    margin: 2px auto;
+  }
+}

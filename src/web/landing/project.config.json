@@ -1,0 +1,7 @@
+{
+    "port": 3000,
+    "db": {
+        "endpoint": "https://dynamodb.ap-south-1.amazonaws.com",
+        "region": "ap-south-1"
+    }
+}

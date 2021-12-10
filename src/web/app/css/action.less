@@ -1,0 +1,75 @@
+@import 'variables.less';
+
+.bo-essel-action {
+  font-size: 20px;
+  cursor: pointer;
+  margin: 0 2px 0 2px;
+
+  &:first-of-type {
+    margin-left: 0;
+  }
+  &:last-of-type {
+    margin-right: 0;
+  }
+
+  &:hover {
+    color: @mainColorOnHover;
+  }
+
+  &.active {
+    color: @mainColorOnHover;
+  }
+
+  & i+span {
+    margin-left: 3px;
+  }
+
+  &.inline {
+    font-size: 12px;
+  }
+
+  &.bo-essel-action-disabled {
+    color: @linkColorDisabled;
+    cursor: initial;
+    pointer-events: none;
+  }
+
+  &.bo-essl-action-text-link {
+    text-decoration: underline;
+    margin-left: 20px;
+
+    & span {
+      line-height: 34px;
+      font-family: @mainFontFamily;
+      font-size: 14px;
+      font-feature-settings: 'kern' 1;
+      font-kerning: normal;
+      font-style: normal;
+      font-weight: bold;
+      color: @textColor;
+    }
+  }
+
+  &.action-manage {
+    .fa {
+      font-size: 14px;
+      margin: 10px 20px;
+      font-family: @mainBoldFontFamily;
+      font-weight: bold;
+      &:before {
+        margin-right: 3px;
+        color: @mainColor;
+        font-family: @initialFontFamily;
+      }
+    }
+  }
+}
+
+
+
+.fa-addv {
+background-image:url(/assets/images/addv.svg);
+width:15px;
+height:15px;
+}
+

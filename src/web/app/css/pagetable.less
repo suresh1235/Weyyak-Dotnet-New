@@ -1,0 +1,189 @@
+@import 'variables.less';
+
+.table-title {
+    background-color: @bootstrapWhite;
+    margin: 0 -14px;
+    border-radius: 5px 5px 0 0;
+    font-weight: 600;
+}
+
+.bo-essel-component-container {
+
+  & > div > .container,
+  & > .container {
+    width: 100%;
+  }
+
+  & .bo-essel-page-table {
+
+    &.default {
+      background-color: white;
+
+      & th {
+        font-family: 'Open Sans Light', 'Open Sans';
+        font-weight: 300;
+        font-style: normal;
+        font-size: 11px;
+        color: #ffffff;
+        background-color: @mainColor;
+        text-align: center;
+        vertical-align: middle;
+      }
+
+      & td {
+        font-family: 'Open Sans Regular', 'Open Sans';
+        font-style: normal;
+        font-size: 12px;
+        color: @textColor;
+      }
+    }
+
+    & .no-matches {
+      text-align: center;
+    }
+
+    & tr th.bo-essel-inner-table-wrapper {
+      background-color: transparent;
+    }
+  }
+
+  & .bo-essel-inner-table-wrapper {
+    background-color: transparent;
+
+    & > div {
+      background-color: rgba(234, 234, 234, 1);
+      padding: 20px 5px;
+    }
+
+    & th, td, .bo-essel-page-inner-table {
+      color: #000;
+      border-width: 0;
+      background-color: transparent;
+    }
+
+    & .bo-essel-page-inner-table {
+      & thead {
+        & tr th {
+          color: @textColor;
+          border-top: 1px solid white;
+          font-weight: 700;
+          font-style: normal;
+          font-size: 13px;
+          background-color: transparent;
+        }
+      }
+
+      & tr.bo-essel-table-row-inactive td {
+        color: #bcbcbc;
+      }
+    }
+
+    & tr {
+      border-bottom: 1px solid white;
+    }
+
+    & .bo-essel-filters {
+
+      & span {
+        float: left;
+        display: inline-block;
+        position: relative;
+      }
+    }
+  }
+
+
+  & .bo-essel-filters {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-size: 14px;
+    color: @textColor;
+    margin-bottom: 2px;
+    // text-align: right;
+
+    .dateInput{
+      width: 250px;
+      height: 35px;
+      margin: 3px;
+      -webkit-appearance: textfield;
+      border: solid 1px rgb(166, 166, 166);
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    & span {
+
+      &:first-of-type {
+        margin-right: 10px;
+      }
+
+      select {
+        font-size: 12px;
+        // float:right;
+        border-radius: 8px;
+        padding:5px;
+        font-style: italic;
+        margin: 0 2px 0 2px;
+      }
+    }
+
+    & div {
+      font-size: 20px;
+      font-style: italic;
+      // margin-bottom: 15px;
+
+      &.search {
+        float: left;
+        display: inline-block;
+        position: relative;
+
+        & input {
+          width: 350px;
+          padding-left: 35px;
+          -webkit-appearance: textfield;
+          border: solid 1px rgb(166, 166, 166);
+          border-radius: 10px;
+        }
+
+        & i {
+          position: absolute;
+          top: 6px;
+          left: 10px;
+        }
+      }
+    }
+  }
+
+  & .bo-essel-pagination {
+
+    & li {
+      cursor: pointer;
+
+      &.active > a {
+        background-color: @mainColor;
+        border-color: @mainColor;
+        color: white
+      }
+    }
+
+    a {
+      font-family: 'Open Sans';
+      font-style: normal;
+      font-size: 14px;
+      color: @textColor;
+    }
+
+    ul {
+      display: table;
+      margin: auto auto 10px;
+    }
+  }
+
+  & .bo-essel-actions {
+    display: inline-flex;
+  }
+
+  & .bo-essel-loader-filters {
+    display: inline-block;
+  }
+}
